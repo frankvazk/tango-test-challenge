@@ -16,7 +16,8 @@ const calculateFibonacci = async () => {
             }
         }
         
-    }catch( error ){        
+    }catch( error ){   
+        console.log("No se pudo obtener el numbero");     
     }
 
     _button.textContent = "Calculate";
