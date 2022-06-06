@@ -1,3 +1,5 @@
+import { config } from "../config";
+
 const api = "http://localhost:3500/api/fibonacci";
 
 const calculateFibonacci = async () => {
@@ -24,7 +26,7 @@ const calculateFibonacci = async () => {
 }
 
 const getFibonacciNumber = async ( fibonacciNumber : number ) : Promise<number> => {
-    const response = await fetch( `${ api }/${ fibonacciNumber }`, {
+    const response = await fetch( `${ config.api_host }/${config.api_endpoint}/${ fibonacciNumber }`, {
         mode: 'cors',
         headers: {
           'Access-Control-Allow-Origin':'*'
