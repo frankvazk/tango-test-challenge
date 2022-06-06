@@ -1,5 +1,5 @@
 const config = {
-    api_host: process.env.API_HOST || "http://localhost:3500/",
+    api_host: process.env.API_HOST || "https://api-tango-test-challenge.herokuapp.com",
     api_endpoint: process.env.API_ENDPOINT || "api/fibonacci",
   };
   
