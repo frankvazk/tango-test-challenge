@@ -1,7 +1,5 @@
 import { config } from "../config";
 
-const api = "http://localhost:3500/api/fibonacci";
-
 const calculateFibonacci = async () => {
     const _field : HTMLInputElement = document.getElementById('fibonaccinumber') as HTMLInputElement;
     const _button : HTMLButtonElement  = document.getElementById('calculatebtn') as HTMLButtonElement;
